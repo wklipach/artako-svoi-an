@@ -1,0 +1,24 @@
+.root {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+
+  .confirmationCode {
+    -moz-appearance: textfield;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 21px;
+    color: #003166;
+    height: 46px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}

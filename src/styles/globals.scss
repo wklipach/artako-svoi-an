@@ -1,0 +1,114 @@
+@import "fonts/font";
+@import "../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  height: 100vh;
+
+  > div {
+    min-height: 100%;
+  }
+}
+
+
+input[type=date]::placeholder { 
+  color: transparent;
+}
+
+.slide {
+  background-color: transparent!important;
+}
+
+.thumbs-wrapper {
+  display: none;
+}
+
+.gallery-slider {
+  .control-dots {
+    margin-bottom: 0px !important;
+    z-index: 10;
+  }
+
+  @media screen and (max-width: 960px) {
+    .control-dots {
+      margin-bottom: 40px !important;
+    }
+  
+    .cropper {
+      canvas {
+        height: unset !important;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.text-carousel {
+  .control-dots {
+    position: initial;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 960px) {
+    .control-dots {
+      text-align: center;
+    }
+  }
+}
+
+.discount-hover {
+  box-sizing: border-box;
+}
+
+.discount-hover:hover {
+  border-width: 1px;
+}
+
+.discount-card-wrapper {
+  .tooltip {
+    visibility: hidden;
+  }
+
+  &:hover {
+    .tooltip {
+      visibility: visible;
+    }
+  }
+
+  .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #001D3D transparent transparent transparent;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #003166;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: #003166;
+}

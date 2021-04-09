@@ -1,0 +1,18 @@
+.colorpicker {
+  height: 68px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(198, 210, 225, 0.74);
+
+  &:last-child {
+    border: 0;
+  }
+
+  .picker {
+    height: 55px;
+    width: 55px;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+}
